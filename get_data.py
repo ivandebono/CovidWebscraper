@@ -22,7 +22,7 @@ import requests
 import datetime as dt
 
 
-from .dataframe_utilities import resample_weekly2daily
+from dataframe_utilities import resample_weekly2daily
 
 
 
@@ -126,7 +126,7 @@ def get_data_Hesse(plot=False):
 
 
 def get_data_Sweden(plot=False):
-    
+    print ('inside Sweden')
     url='https://free.entryscape.com/store/360/resource/15'
     df=pd.read_csv(url)
     SWE=pd.DataFrame({'date':pd.to_datetime(df.Statistikdatum,errors='coerce'),'positive':df.Totalt_antal_fall,
