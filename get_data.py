@@ -22,7 +22,7 @@ import requests
 import datetime as dt
 
 
-from dataframe_utilities import resample_weekly2daily
+from .dataframe_utilities import resample_weekly2daily
 
 
 
